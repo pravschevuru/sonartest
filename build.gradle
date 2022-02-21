@@ -1,9 +1,7 @@
-#Build.Gradle
-
 apply plugin: 'installer-platform-plugin'
 apply plugin: 'installer-addon2-plugin'
 apply plugin: 'installer-platform-containerization-plugin'
-//apply plugin: "org.sonarqube"
+apply plugin: "org.sonarqube"
 
  plugins {
      id "org.sonarqube" version "7.9.6"
