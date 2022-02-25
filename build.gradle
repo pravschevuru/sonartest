@@ -1,3 +1,7 @@
+apply plugin: 'installer-platform-plugin'
+apply plugin: 'installer-addon2-plugin'
+apply plugin: 'installer-platform-containerization-plugin'
+
 plugins {
     id "jacoco"
     id "java"
@@ -13,10 +17,6 @@ sonarqube {
         property 'sonar.projectName', 'Example of SonarQube Scanner for Gradle Usage'
     }
 }
-
-apply plugin: 'installer-platform-plugin'
-apply plugin: 'installer-addon2-plugin'
-apply plugin: 'installer-platform-containerization-plugin'
 
 def pl = platform {
     localProperties {
