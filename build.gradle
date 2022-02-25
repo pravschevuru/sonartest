@@ -1,11 +1,23 @@
+plugins {
+    id "jacoco"
+    id "java"
+    id "application"
+    id "org.sonarqube" version "3.3"
+}
+
+description = 'Example of SonarQube Scanner for Gradle Usage'
+version = '2.14'
+
+sonarqube {
+    properties {
+        property 'sonar.projectName', 'Example of SonarQube Scanner for Gradle Usage'
+    }
+}
+
 apply plugin: 'installer-platform-plugin'
 apply plugin: 'installer-addon2-plugin'
 apply plugin: 'installer-platform-containerization-plugin'
-apply plugin: "org.sonarqube"
 
-/* plugins {
-     id "org.sonarqube" version "7.9.6"
-            }*/
 def pl = platform {
     localProperties {
         property 'recaptcha.publickey', ''
@@ -25,16 +37,6 @@ def pl = platform {
     afterSetup {
         ensureAdminPasswordSet()
     }
-
-   
-			
-			
-sonarqube {
-    properties {
-        property 'sonar.host.url', 'http://34.87.159.101:9000/'
-	property 'sonar.login', '30115f3cd7a8c7479c8ff79fb1e4d2f50070007b'
-    }
-}
 
     extensions {
 
