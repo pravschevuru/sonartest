@@ -17,7 +17,7 @@ sonarqube {
     }
 }
 
-def pl = platform {
+/*def pl = platform {
     localProperties {
         property 'recaptcha.publickey', ''
         property 'recaptcha.privatekey', ''
@@ -229,4 +229,4 @@ task createImagesStructure {
     doLast {
         dpl.createImagesStructure()
     }
-}
+}*/
