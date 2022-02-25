@@ -4,9 +4,9 @@ plugins {
     id "application"
     id "org.sonarqube" version "3.3"
 }
-apply plugin: 'installer-platform-plugin'
+/*apply plugin: 'installer-platform-plugin'
 apply plugin: 'installer-addon2-plugin'
-apply plugin: 'installer-platform-containerization-plugin'
+apply plugin: 'installer-platform-containerization-plugin'*/
 
 description = 'Example of SonarQube Scanner for Gradle Usage'
 version = '2.14'
