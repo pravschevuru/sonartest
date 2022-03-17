@@ -6,7 +6,8 @@ node{
     
     stage("sonarqube code analysis"){
         sh "ls -lrth"
-        sh "${gradleHome}/bin/gradle sonarqube"
+        //sh "${gradleHome}/bin/gradle sonarqube"
+        sh "gradlew sonarqube"
         
     }
 }
